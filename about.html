@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SF | 마포 스트릿패션 정보 — 구글 상위노출 대행</title>
+    <meta name="description" content="마포에서 가장 트렌디한 스트릿패션 브랜드, 구글 상위노출 대행으로 당신의 쇼핑몰을 1등으로. 지금 바로 상담하고 SNS에서 핫한 아이템을 만나보세요.">
+    <meta name="keywords" content="마포 스트릿패션, 구글 상위노출 대행, 스트릿 브랜드, 마포 패션, SEO 대행, 스트릿웨어">
+    <link rel="canonical" href="https://sf-t3-1779642675702-099.vercel.app/info">
+    <meta property="og:title" content="SF 정보 | 마포 스트릿패션 & 구글 상위노출 대행">
+    <meta property="og:description" content="마포에서 가장 트렌디한 스트릿패션 브랜드, 구글 상위노출 대행으로 당신의 쇼핑몰을 1등으로.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sf-t3-1779642675702-099.vercel.app/info">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #fafafa;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        header {
+            background: #fff;
+            border-bottom: 1px solid #eaeaea;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            color: #111;
+            text-decoration: none;
+        }
+        .logo span {
+            color: #ff4444;
+        }
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: #ff4444;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        .hamburger span {
+            width: 28px;
+            height: 3px;
+            background: #111;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #fff;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                padding: 24px;
+                gap: 20px;
+                border-bottom: 1px solid #eaeaea;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+        }
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero-text h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+        .hero-text h1 span {
+            color: #ff4444;
+        }
+        .hero-text p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 32px;
+        }
+        .info-section {
+            padding: 60px 0;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 60px;
+        }
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+        }
+        .info-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 36px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+            border: 1px solid #f0f0f0;
+        }
+        .info-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #111;
+        }
+        .info-card p {
+            color: #555;
+            font-size: 1rem;
+            margin-bottom: 12px;
+        }
+        .info-card .highlight {
+            font-weight: 600;
+            color: #ff4444;
+        }
+        .faq {
+            background: #fff;
+            border-radius: 16px;
+            padding: 48px;
+            border: 1px solid #f0f0f0;
+        }
+        .faq h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 32px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-item h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+        .faq-item p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        .tel-link {
+            display: inline-block;
+            background: #ff4444;
+            color: #fff;
+            padding: 14px 40px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: background 0.3s;
+            margin-top: 8px;
+        }
+        .tel-link:hover {
+            background: #e63333;
+        }
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            color: #888;
+            font-size: 0.9rem;
+            border-top: 1px solid #eaeaea;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">SF<span>.</span></a>
+                <div class="nav-links">
+                    <a href="/">홈</a>
+                    <a href="/info">정보</a>
+                    <a href="/service">서비스</a>
+                    <a href="/contact">문의</a>
+                </div>
+                <div class="hamburger" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('active');">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>마포에서 <span>가장 핫한</span><br>스트릿패션 정보</h1>
+                <p>진짜 마포 사람들이 입는 옷, 그게 뭔지 알려줄게. 구글 상위노출 대행도 같이 챙겨가자.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>📍 마포 스트릿패션의 정수</h3>
+                    <p>홍대부터 합정까지, 마포는 그냥 동네가 아니야. 여긴 스트릿패션의 성지라고 불러도 돼. 우리는 매주 새로운 아이템을 직접 발로 뛰어서 소개해. <span class="highlight">트렌드는 여기서 시작해.</span></p>
+                    <p>작년 가을에 망원에서 본 어떤 형이 입은 후드티, 그거 다음 달에 전국으로 퍼졌잖아? 그런 느낌이야. 우리가 딱 그런 걸 찾아줌.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🔍 구글 상위노출 대행, 왜 필요해?</h3>
+                    <p>솔직히 말할게 — 아무리 좋은 옷 만들어도 사람들이 못 찾으면 의미 없지. 우리는 구글 상위노출 대행으로 너의 쇼핑몰을 1페이지에 띄워줘. <span class="highlight">마포에서 시작해서 전국으로.</span></p>
+                    <p>작업한 브랜드 중에 한 달 만에 방문자 3배 오른 곳도 있었어. 허튼소리 아니고 진짜야. 상담 한 번 받아봐, 부담 없이.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <h2>자주 묻는 질문</h2>
+                <div class="faq-item">
+                    <h4>Q. 마포에서만 사는 사람들만 입는 옷인가요?</h4>
+                    <p>아니! 마포 감성이 좋아서 그렇지, 전국 어디서나 소화 가능해. 우리 아이템은 기본에 포인트를 주는 스타일이라 어디서나 힙함이 묻어나옴. 구글 상위노출 대행 덕분에 지방에서도 많이 찾아줘.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Q. 구글 상위노출 대행, 진짜 효과 있나요?</h4>
+                    <p>있고 말고. 우리는 키워드 전략부터 기술적인 부분까지 다 잡아줘. 예를 들어 '마포 스트릿패션'이라는 키워드로 검색하면 우리 고객사가 1페이지에 뜨게 만드는 식이야. 결과물로 보여줄 자신 있어.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Q. 상담은 어떻게 받나요?</h4>
+                    <p>전화 한 통이면 돼. 아래 번호로 바로 걸어와. 10분이면 대충 감 잡을 수 있어. 친절하게 알려줄게, 형이나 동생처럼.</p>
+                </div>
+                <div style="text-align: center; margin-top: 32px;">
+                    <a href="tel:010-1234-5678" class="tel-link">📞 지금 전화하기</a>
+                    <p style="margin-top: 12px; color: #888; font-size: 0.9rem;">상담은 무료야, 부담 갖지 마</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 SF — 마포 스트릿패션 & 구글 상위노출 대행</p>
+        </div>
+    </footer>
+
+    <script>
+        // 모바일 햄버거 메뉴
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
